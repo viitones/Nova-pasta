@@ -33,7 +33,7 @@ header nav {
   padding: 8px;
   cursor: pointer;
   background-color: #1851c3;
-  /* display: none; */
+  display: none;
 }
 
 .btn-ico img svg {
@@ -78,10 +78,21 @@ header nav {
   font-size: 4rem;
 }
 
+@media (max-width: 700px) { 
+  .btn-ico {
+    display: inline;
+  }
+
+  header nav {
+    display: none;
+  }
+
+}
 @media (max-width: 500px) { 
   header nav {
     display: none;
   }
+  
 
   .overlay a {
     font-size: 1.5rem;
