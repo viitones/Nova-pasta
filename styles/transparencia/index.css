@@ -1,0 +1,11 @@
+@import url('../global.css');
+@import url('../rodape.css');
+@import url('main.css');
+
+.headert {
+  background-color: #0F172A;
+  padding-block: 3rem;
+  width: 100%;
+  z-index: -10;
+  /* margin-bottom: 2rem; */
+}

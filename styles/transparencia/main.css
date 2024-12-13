@@ -1,0 +1,60 @@
+body > div{
+  background-color: #f1f1f1;
+  padding-block: 3rem;
+}
+
+main {
+  background-color: white;
+  max-width: 1200px;
+  margin-inline: auto;
+  text-align: center;
+  height: 100vh;
+  z-index: 10;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+main h1 {
+  color: #0F172A;
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+
+main > div {
+  text-align: start;
+}
+
+main h2 {
+  color: #0F172A;
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+.cards {
+  padding-top: 1rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.card {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card img {
+  width: 60px;
+}
+
+.card p {
+  color: #0f172a93;
+  font-size: 1.2rem;
+}
+
+.rodape {
+  margin: 0 !important;
+}

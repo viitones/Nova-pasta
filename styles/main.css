@@ -1,0 +1,76 @@
+main {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+main h2 {
+  color: black !important;
+  font-weight: 500;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card {
+  display: flex;
+  max-width: 1000px;
+}
+
+.card > div {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  color: black;
+}
+
+.card div p:first-child {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.card > div a {
+  background-color: #1851c3;
+  color: white;
+  padding-block: 0.5rem;
+  padding-inline: 4rem;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.card img {
+  width: 300px;
+  height: 400px;
+}
+
+.right {
+  text-align: right;
+}
+
+.right a {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 700px) { 
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main h2 {
+    font-size: 3.5rem;
+  }
+}
