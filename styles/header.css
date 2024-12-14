@@ -53,7 +53,7 @@ header nav {
   width: 0%;
   left: 0;
   top: 0;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   transition: all 0.5s;
 }
 
