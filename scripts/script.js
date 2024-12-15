@@ -2,8 +2,9 @@ function closeNav() {
   document.getElementById('mynav').style.width = '0'
 }
 function openNav() {
-  document.getElementById('mynav').style.width = '100%'
+  document.getElementById('mynav').style.width = '40%'
 }
+
 
 new Swiper('.card-wrapper', {
   loop: true,

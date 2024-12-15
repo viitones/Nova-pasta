@@ -30,6 +30,10 @@
   font-weight: 400;
 }
 
+.dados {
+  text-align: start;
+}
+
 .dados p {
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.596) !important;
@@ -39,12 +43,38 @@
 .mensagem {
   padding-left: 1.5rem;
   border-left: 2px solid #5372F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 form div{
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+  margin-top: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+  'name sobrenome'
+  'email telefone'
+  'texto texto';
+  gap: 1rem;
+}
+
+#name {
+  grid-area: name;
+}
+#sobrenome {
+  grid-area: sobrenome;
+}
+#email {
+  grid-area: email;
+}
+#tel {
+  grid-area: telefone;
+}
+
+#mensagem {
+  grid-area: texto;
 }
 
 input {
@@ -52,7 +82,6 @@ input {
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  width: 48%;
 }
 
 input::placeholder {
@@ -66,7 +95,6 @@ form textarea {
   padding: 0.5rem 1rem;
   height: 100px;
   border-radius: 8px;
-  flex: 2;
 }
 
 form button {
@@ -90,5 +118,4 @@ form button:hover {
    align-items: center;
    margin-inline: 1rem;
   }
-
 }
