@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/judo/index.css">
+    <title>Desfrutare | Vôlei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+  
+  </head>
+<body>
+
+  <header>
+    <div>
+      <a href="./index.html" class="img-container">
+        <img src="./assets/logo.png" alt="infinity institute">
+      </a>
+      <nav>
+        <a href="/index.html">Início</a>
+        <div>
+          <a href="#modalidade">Modalidades</a>
+        </div>
+        <a href="./transparencia.html">Transparência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div id="mynav" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">
+          &times;
+        </a>
+
+        <div class="conteudo">
+          <a href="/index.html">Início</a>
+          <a class="cls" href="#modalidade">Modalidades</a>
+          <a href="./transparencia.html">Transparência</a>
+          <a class="cls" href="#contato">Contato</a>
+        </div>
+      </div>
+
+      <button class="btn-ico" onclick="openNav()">
+        <img src="./assets/icon.svg" alt="">
+      </button>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1>JUDÔ</h1>
+    <div class="img-cont">
+      <img src="./assets/volei/volei.png" alt="Judô">
+      <p>
+        O voleibol é um esporte coletivo criado em 1895 por William G. Morgan, nos Estados Unidos, com o objetivo de oferecer uma alternativa de atividade física menos intensa em comparação ao basquetebol. Sua dinâmica envolve duas equipes que competem para marcar pontos ao passar a bola por cima de uma rede, buscando que ela toque o chão na quadra adversária.
+        <br><br>
+        Inicialmente chamado de "mintonette", o voleibol rapidamente ganhou popularidade por sua acessibilidade e por poder ser praticado em ambientes fechados ou ao ar livre. Com o passar do tempo, as regras foram ajustadas, tornando o jogo mais ágil e competitivo, o que contribuiu para sua disseminação global.
+        <br><br>
+        O esporte foi incluído no programa oficial dos Jogos Olímpicos em 1964, durante as Olimpíadas de Tóquio, consolidando-se como uma das modalidades mais praticadas no mundo. Além disso, a criação de sua variante de praia, o vôlei de praia, deu novo fôlego à modalidade, atraindo diferentes públicos e ampliando sua presença em cenários esportivos diversos
+        <br><br>
+        O voleibol se destaca pela combinação de estratégia, habilidade técnica e trabalho em equipe. Movimentos como saques, passes, levantamentos, ataques, bloqueios e defesas exigem precisão e sincronismo, o que torna o jogo emocionante tanto para os jogadores quanto para os espectadores.
+        Com milhões de praticantes em todos os continentes e competições de alto nível organizadas pela Federação Internacional de Voleibol (FIVB), o esporte continua a inspirar atletas de todas as idades e a promover valores como cooperação, disciplina e espírito esportivo.
+      </p>
+    </div>
+  
+    <form id="form" action="https://api.web3forms.com/submit" method="POST">
+      <div>
+        <input type="text" placeholder="Nome" id="name" name="name" required>
+
+        <input type="email" placeholder="Email" id="email" name="email" required>
+        <input type="number" placeholder="Telefone" id="tel" name="tel" required>
+
+        <input type="text" placeholder="Bairro" id="bairro" name="bairro" required>
+        <input type="text" placeholder="Cidade" id="cidade" name="cidade" required>
+        <input type="text" placeholder="Modalidade desejada" id="modalidade" name="modalidade" required>
+
+        <textarea name="mensagem" id="mensagem" placeholder="Digte sua mensagem"></textarea>
+      </div>
+      <button id="finish">Enviar</button>
+      <input type="hidden" name="access_key" value="295612df-9df5-4cfc-8c6b-f7f2ed8b8a19">
+    </form>
+  </section>
+
+  <footer>
+    <a href="">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+    </a>
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
